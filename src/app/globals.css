@@ -7,15 +7,23 @@
   --foreground: #171717;
 }
 
+@layer base {
+  input {
+    @apply w-full focus:outline-none focus:border-zinc-500 border-b border-zinc-300 py-3 px-3 text-3xl transition-colors bg-transparent font-bold;
+  }
+
+  textarea {
+    @apply border border-zinc-300 w-full rounded focus:outline-none focus:border-zinc-500 transition-colors py-5 px-3 resize-none h-[150px] text-xl;
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
