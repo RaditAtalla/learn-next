@@ -8,11 +8,11 @@ export default function CreatePage() {
         action=""
         className="border-2 border-zinc-300 rounded-md flex flex-col items-center gap-5 mx-96 py-10 px-5"
       >
-        <input type="text" placeholder="Title" name="title" />
+        <input type="text" placeholder="Team name" name="teamName" />
         <textarea
-          name="content"
-          id="content"
-          placeholder="Content"
+          name="Description"
+          id="description"
+          placeholder="description"
           className="mb-4"
         />
         <Button label="Submit" className="w-full" />
